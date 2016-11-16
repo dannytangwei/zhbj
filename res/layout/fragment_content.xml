@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 这是主页面碎片布局。 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.ui.NoScrollViewPager
+        android:id="@+id/vp_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        </com.example.ui.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <!--  这里把背景设置为透明，是为了避免在有些机型不能正常运行。         -->
+        <RadioButton
+            android:id="@+id/rb_fragment_home"
+            style="@style/RadioButton_style"
+            android:drawableTop="@drawable/selector_fragment_home"
+            android:checked="true"
+            android:text="首页" />
+        <RadioButton
+            android:id="@+id/rb_fragment_news"
+            style="@style/RadioButton_style"
+            android:drawableTop="@drawable/selector_fragment_news"
+            android:text="新闻中心" />
+        <RadioButton
+            android:id="@+id/rb_fragment_smart"
+            style="@style/RadioButton_style"
+            android:drawableTop="@drawable/selector_fragment_smart"
+            android:text="智慧服务" />
+        <RadioButton
+            android:id="@+id/rb_fragment_gov"
+            style="@style/RadioButton_style"
+            android:drawableTop="@drawable/selector_fragment_gova"
+            android:text="政务" />
+        <RadioButton
+            android:id="@+id/rb_fragment_setting"
+            style="@style/RadioButton_style"
+            android:drawableTop="@drawable/selector_fragment_setting"
+            android:text="设置" />
+    </RadioGroup>
+
+</LinearLayout>

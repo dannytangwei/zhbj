@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 用于引导页面中最后一个页面张的“开始体验”按钮 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--  注意，新建一个color文件夹。
+                   设置按钮按下状态的字体颜色为黑色，非按下状态的字体颜色为白色 -->
+    <item android:state_pressed="true"
+          android:color="#000"
+          ></item>
+    <item android:color="#fff"></item>
+
+</selector>

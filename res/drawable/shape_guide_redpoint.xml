@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通过shape创建简单的图片。
+          创建一个红色小圆点，表示当前显示(可用状态)的图片位置
+         注意： 
+         <corners android:radius="5dp"/>  这种方法创建的圆点，如果不去Java代码中再去给
+                 控件设置大小。将显示不出来！  
+ -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="oval"
+    >
+    
+    <size android:width="10dp"
+          android:height="10dp"
+          />
+    <solid android:color="#FF0000"/>
+
+</shape>

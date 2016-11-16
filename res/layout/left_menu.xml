@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_left_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 1.设置侧边栏框架时，把这里作为侧边栏
+         2.动态加载碎片：
+                     这里使用FrameLayout布局，所以当放入碎片时将覆盖这个旧的布局。从而实现动态加载碎片
+     -->
+
+</FrameLayout>
